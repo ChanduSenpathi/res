@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>hello</title>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="put imp">
+        <meta name="author" content="put name of the name">
+        <meta name="description" content="one line description">
+        <meta name="viewport" content="width=device-width initial-scale=1">
+        <link rel="stylesheet" href="reg.css">
+    </head>
+    <body>
+        <h1>Job Registration form</h1>
+        <form action="submitsec.html">
+            <table>
+                <tr>
+                    <td><label>Firstname</label></td>
+                    <td><input type="text" name="pname" pattern="[A-Za-z]*" minlength="4" maxlength="15" placeholder="firstname" required></td>
+                </tr>
+                <tr>
+                    <td><label>Middilename</label></td>
+                    <td><input type="text" name="pname" pattern="[A-Za-z]*" minlength="4" maxlength="15" placeholder="middilename" ></td>
+                </tr>
+                <tr>
+                    <td><label>Lastname</label></td>
+                    <td><input type="text" name="pname" pattern="[A-Za-z]*" minlength="4" maxlength="15" placeholder="lastname" required></td>
+                </tr>
+                <tr>
+                    <td><label>Gender</label></td>
+                    <td>
+                        <input type="radio" name="gender" id="g1" required><label for="gen1">Male</label>
+                        <input type="radio" name="gender" id="g2" required><label for="gen2">Female</label>
+                        <input type="radio" name="gender" id="g3" required><label for="gen3">Others</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="date1">Date of Birth</label></td>
+                    <td><input type="date" id="date1" name="date" required></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Qualifications</label></td>
+                        <td>
+                        <input type="radio" name="qualification" id="qua1" required><label for="qua1">B.Tech</label>
+                        <input type="radio" name="qualification" id="qua2" required><label for="qua2">Diploma</label>
+                        <input type="radio" name="qualification" id="qua3" required><label for="qua3">10+2</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Maritual status</label></td>
+                        <td>
+                        <input type="radio" name="mar" id="mar1" required><label for="mar1">Married</label>
+                        <input type="radio" name="mar" id="mar2" required><label for="mar2">Unmarried</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Skills</label></td>
+                    <td>
+                        <input type="checkbox" name="check" id="course1"><label for="course1">:Java</label>
+                        <input type="checkbox" name="check" id="course2"><label for="course2">:Html</label>
+                        <input type="checkbox" name="check" id="course3"><label for="course3">:CSS</label>
+                        <input type="checkbox" name="check" id="course4"><label for="course4">:JavaScript</label>
+                        <input type="checkbox" name="check" id="course5"><label for="course4">:Python</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="pass1">Password</label></td>
+                    <td><input type="password" name="pass" id="pass1" minlength="4" maxlength="10" pattern="(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{5,10}"></td>
+                </tr>
+                <tr>
+                    <td><label for="pass2">Confirm Password</label></td>
+                    <td><input type="password" name="pass" id="pass2" minlength="4" maxlength="10" pattern="(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{5,10}"></td>
+                </tr>
+                <tr>
+                    <td><label id="num1">Mobile Number</label></td>
+                    <td><input type="text" name="num" id="num1" minlength="1" maxlength="10" placeholder="9876543210" required></td>
+                </tr>
+                <tr>
+                    <td><label id="num1">Email</label></td>
+                    <td><input type="email"  id="mail" placeholder="abc@gmail.com" required></td>
+                </tr>
+                <tr><td></td>
+                    <td><input type="submit" value="Register">
+                    <input type="reset" value="Reset"></td>
+                </tr>
+            </table>
+        </form>
+        <marquee>For more details contact Neosoft Technologies... We provide the Best Pages...</marquee>
+    </body>
+</html>
